@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt | Timon Messmer</title>
+    <link rel="stylesheet" href="../styles/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="home.html">Timon Messmer</a>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a class="nav-link" href="home.html">Über mich</a>
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link is-active" href="contact.html">Kontakt</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="contact-layout" aria-labelledby="contact-title">
+        <h1 id="contact-title" class="page-title">Kontakt</h1>
+
+        <div class="contact-panel panel">
+          <div class="contact-list">
+            <p>E-Mail: timon.messmer@edu.gbssg.ch</p>
+            <p>Tel: +41 79 794 23 41</p>
+            <a href="https://www.gbssg.ch/">Social-Media: gbssg.ch</a>
+            <p>
+              Wohnort: Blattenstrasse. 18,<br />
+              9052 Niederteufen
+            </p>
+            <p class="is-short">Wohnort</p>
+            <video
+              class="contact-map media-shape"
+              autoplay
+              loop
+              muted
+              playsinline
+              aria-label="Video vom Wohnort"
+            >
+              <source src="../videos/home-maps.mp4" type="video/mp4" />
+              Dein Browser kann dieses Video nicht abspielen.
+            </video>
+          </div>
+
+          <form class="contact-form" aria-labelledby="form-title" novalidate>
+            <h2 id="form-title">Kontaktformular</h2>
+            <label>
+              <span>Name:</span>
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              <span>E-Mail:</span>
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              <span>Nachricht:</span>
+              <textarea
+                rows="4"
+                name="message"
+                placeholder="Bitte geben sie ihre nachricht ein..."
+                required
+              ></textarea>
+            </label>
+            <button class="form-submit" type="submit">Senden</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>©Timon Messmer</span>
+    </footer>
+    <script src="../scripts/contact.js"></script>
+  </body>
+</html>
