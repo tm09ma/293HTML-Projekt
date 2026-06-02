@@ -131,7 +131,7 @@ async function sendContactEmail({ name, email, message }) {
 }
 
 function serveStaticFile(urlPath, response, headOnly) {
-  const pathname = urlPath === "/" ? "/html/index.html" : urlPath;
+  const pathname = urlPath === "/" ? "/index.html" : urlPath;
   const filePath = path.normalize(path.join(rootDir, decodeURIComponent(pathname)));
 
   if (!filePath.startsWith(rootDir) || path.basename(filePath).startsWith(".")) {
